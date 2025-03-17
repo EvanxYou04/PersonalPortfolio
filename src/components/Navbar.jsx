@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { navLinks } from '../constants';
 import { FaBars, FaTimes } from 'react-icons/fa';

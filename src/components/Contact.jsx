@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { socialMedia } from '../constants';
 
@@ -35,7 +35,7 @@ const Contact = () => {
         <div>
           <h3 className="text-2xl font-bold text-white mb-4">Get in Touch</h3>
           <p className="text-gray-300">
-            I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+            I&aposm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
           </p>
         </div>
 

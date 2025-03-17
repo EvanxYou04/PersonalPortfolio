@@ -1,6 +1,15 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const ExperienceCard = ({ title, company, location, period, description, technologies, index }) => {
+  ExperienceCard.propTypes = {
+    title: PropTypes.string.isRequired,
+    company: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    period: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+    index: PropTypes.number.isRequired,
+  };
   const isEven = index % 2 === 0;
 
   return (
@@ -37,6 +46,7 @@ const ExperienceCard = ({ title, company, location, period, description, technol
       </div>
     </div>
   );
-};
 
+};
 export default ExperienceCard;
+

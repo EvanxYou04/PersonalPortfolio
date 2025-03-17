@@ -1,8 +1,16 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const Project = ({ title, description, image, technologies, githubLink, liveLink }) => {
+  Project.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+    githubLink: PropTypes.string,
+    liveLink: PropTypes.string
+  };
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
