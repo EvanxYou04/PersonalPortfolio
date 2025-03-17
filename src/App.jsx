@@ -2,23 +2,12 @@ import styles from './style'
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Experience from './components/Experience';
+import Education from './components/Education';
 // import Project from './components/Project';
 import Contact from './components/Contact';
 import { socialMedia } from './constants';
 
 const App = () => {
-  const projects = [
-    {
-      title: "Project 1",
-      description: "A brief description of your first project and its key features.",
-      image: "/project1.jpg",
-      technologies: ["React", "Node.js", "MongoDB"],
-      githubLink: "https://github.com/yourusername/project1",
-      liveLink: "https://project1.com"
-    },
-    // Add more projects here
-  ];
-
   return (
     <div className="bg-primary w-full overflow-hidden">
       <Navbar />
@@ -58,7 +47,7 @@ const App = () => {
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           {/* About Section */}
-          <section id="about" className="py-20">
+          <section id="about me" className="py-20">
             <h2 className="text-3xl font-bold text-white mb-8">About Me</h2>
             <About />
           </section>
@@ -68,7 +57,11 @@ const App = () => {
             <h2 className="text-3xl font-bold text-white mb-8">Experience</h2>
             <Experience />
           </section>
-
+          {/* Education Section */}
+          <section id="education" className="py-20">
+            <h2 className="text-3xl font-bold text-white mb-8">Education</h2>
+            <Education />
+          </section>
           {/* Projects Section */}
           {/* <section id="projects" className="py-20">
             <h2 className="text-3xl font-bold text-white mb-8">Projects</h2>

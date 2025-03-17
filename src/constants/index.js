@@ -1,22 +1,26 @@
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export const navLinks = [
-    {
-        id: "experience",
-        title: "Experience"
-    },
-    {
-        id: "about me",
-        title: "About Me"
-    },
-    {
-        id: "projects",
-        title: "Projects"
-    },
-    {
-        id: "contact",
-        title: "Contact"
-    }
+  {
+    id: "about me",
+    title: "About Me"
+  },
+  {
+    id: "experience",
+    title: "Experience"
+  },
+  {
+    id: "education",
+    title: "Education"
+  },
+  {
+    id: "projects",
+    title: "Projects"
+  },
+  {
+    id: "contact",
+    title: "Contact"
+  }
 ]
 export const socialMedia = [
   {
@@ -67,5 +71,22 @@ export const experiences = [
   },
   // Add more experiences as needed
 ];
+
+export const education = 
+  {
+    school: "University of Minnesota College of Science and Engineering",
+    degree: "Bachelor of Science in Computer Science",
+    period: "Expected Graduation: May 2026",
+    location: "Minneapolis, MN",
+    gpa: "3.6 / 4.0",
+    courses: [
+      "Data Structures & Algorithms",
+      "Program Design & Development",
+      "Functional Programming",
+      "Applied Linear Algebra",
+      "Operating Systems",
+      "Machine Architecture & Organization"
+    ]
+  };
 
 
