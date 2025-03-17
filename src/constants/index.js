@@ -1,4 +1,5 @@
-import {default_linkedin, github} from "../assets";
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+
 export const navLinks = [
     {
         id: "experience",
@@ -20,12 +21,19 @@ export const navLinks = [
 export const socialMedia = [
   {
     id: "social-media-1",
-    icon: default_linkedin,
+    icon: FaLinkedin,
     link: "https://www.linkedin.com/in/evanxyou/",
   },
   {
     id: "social-media-2",
-    icon: github,
+    icon: FaGithub,
     link: "https://github.com/EvanxYou04/",
   },
+  // {
+  //   id: "social-media-3",
+  //   icon: FaEnvelope,
+  //   link: "mailto:youxevan@gmail.com"
+  // }
 ];
+
+
