@@ -1,4 +1,5 @@
 # Evan You Personal Website
 
 ## Todo
-[ ] Add Projects
+- [ ] Add Projects
+- [ ] Add Education

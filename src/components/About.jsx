@@ -9,9 +9,9 @@ const About = () => {
         transition={{ duration: 0.5 }}
         className="relative"
       >
-        <div className="w-full h-[400px] rounded-lg overflow-hidden">
+        <div className="w-full h-[400px] rounded-lg overflow-auto">
           <img
-            src="/evan-you.jpg"
+            src="/evan.jpg"
             alt="Evan You"
             className="w-full h-full object-cover"
           />

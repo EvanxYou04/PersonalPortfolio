@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaDochub } from 'react-icons/fa';
 
-const Project = ({ title, description, image, technologies, githubLink, liveLink }) => {
+const Project = ({ title, description, image, technologies, projectLink, liveLink }) => {
   Project.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
-    githubLink: PropTypes.string,
+    projectLink: PropTypes.string,
     liveLink: PropTypes.string
   };
   return (
@@ -25,9 +25,9 @@ const Project = ({ title, description, image, technologies, githubLink, liveLink
           className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-          {githubLink && (
+          {projectLink && (
             <a
-              href={githubLink}
+              href={projectLink}
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300 transition-colors"

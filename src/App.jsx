@@ -3,9 +3,9 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import Experience from './components/Experience';
 import Education from './components/Education';
-// import Project from './components/Project';
+import Project from './components/Project';
 import Contact from './components/Contact';
-import { socialMedia } from './constants';
+import { socialMedia, projects } from './constants';
 
 const App = () => {
   return (
@@ -32,7 +32,7 @@ const App = () => {
                   </a>
                 ))}
               </div>
-              <button 
+              <button
                 onClick={() => document.getElementById('experience').scrollIntoView({ behavior: 'smooth' })}
                 className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full transition-colors"
               >
@@ -63,14 +63,14 @@ const App = () => {
             <Education />
           </section>
           {/* Projects Section */}
-          {/* <section id="projects" className="py-20">
+          <section id="projects" className="py-20">
             <h2 className="text-3xl font-bold text-white mb-8">Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project, index) => (
                 <Project key={index} {...project} />
               ))}
             </div>
-          </section> */}
+          </section>
 
           {/* Contact Section */}
           <section id="contact" className="py-20">
